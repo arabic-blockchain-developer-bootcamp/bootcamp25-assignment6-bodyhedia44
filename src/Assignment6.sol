@@ -40,8 +40,6 @@ contract Assignment6 {
         // decrement user balance from balances mapping
         balances[msg.sender] -= amount;
 
-        require(success, "Withdrawal failed");
-
         // emit suitable event
         emit FundsWithdrawn(msg.sender, amount);
     }
